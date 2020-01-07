@@ -1,6 +1,27 @@
-<h1> My name is  <%= @name %></h1>
 
-<div style='border: 3px dashed red'>  
-  <img src='http://bit.ly/1eze8aE'>
+
+<!-- <form action="/my_nmae" method='post'>
+  <ul>
+    <li>
+      <label> for="name">Name:</label> // used to set lable name 
+      <input type="text" name="user_name">
+    </li>
+    <li>
+      <label> for="mail">E-mail:</label>
+      <input type="hopes" name="user_hopes">
+    </li>
+  </ul>
+</form> -->
+
+<% if @name %>
+<h1> My name is <%= @name %></h1>
+<% end %>
+<form action="/named_cat">
+  <input type="text" name="maker">
+  <input type="submit" name="Submit">
+</form>
+<div style='border: 3px dashed red'>
+  <img src="http://bit.ly/1eze8aE">
 </div>
+
 
